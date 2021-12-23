@@ -1,4 +1,5 @@
 
+
         body{
             background-image: url('layout/bg_index.jpg');
         }
@@ -9,11 +10,16 @@
             height: 70px;
             width: 70px;
         }
+ 
         .menu{
+            max-width: 80%;
+           
             text-align: center;
         }
-        .item{        
-           padding-top:10px ;
+        .item{   
+            max-width: 50%;
+            max-height: 50%;            
+            padding-top:10px ;
             text-align: center;
         }
         .item:target{
@@ -28,11 +34,15 @@
             display:none;
             grid-template-columns: repeat(3,1fr);
         }
+        .item {
+            
+            grid-template-columns: repeat(5,1fr);
+        }
         #test2{
-            font-size: 30px;
+            font-size: 15px;
             background-image: url("footer/jp_bg.jpg");
             display: grid;
-            grid-template-columns: repeat(5,1fr);
+            grid-template-columns: repeat(4,1fr);
             text-align: center;        
         }
         .egt{

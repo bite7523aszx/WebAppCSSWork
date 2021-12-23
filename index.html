@@ -16,14 +16,16 @@
 </head>
 <body>
     <header>
-        <div id="top">
+        <div id="top" >
             <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid">
-                    <div><img src="header/LOGO.png" alt=""></div>
-                    <button id="logbtn" onclick="log()" type="button" class="btn btn-primary">登入</button>
-                  <button id ="iconbtn"class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <div class="container row">
+                    <div class="col-8"><img src="header/LOGO.png" alt=""></div>
+                    <div class="col-4">
+                    <button id="logbtn"  onclick="log()" type="button" class="btn btn-primary col-3">登入</button>
+                    <button id ="iconbtn"class="navbar-toggler col-" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                   </button>
+                  </div>
                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                       <button type="button" class="navbar-toggler-icon" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -52,8 +54,9 @@
                       <button id="lognoin" type="button"class="btn btn-primary">未登入</button>
                     </div>
                   </div>
-                </div>
+                
               </nav>
+            </div>
               <div id="test1">
                   TEST0123456  | $1,000,000
               </div>
@@ -85,39 +88,39 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div id="test2">
-            <div class="egt">EGT JP</div>        
-            <div class="egttext">1091179.57</div>
-            <div class="line">|</div>                     
-            <div class="egt">15輪 JP</div>
-            <div class="egttext">1091179.57</div>
-            
+          <div class="col-md-12" id="test2">
+            <div class="egt col-md-3 ">EGTJP</div>        
+            <div class="egttext col-md-3 ">1091179.57|</div>                                
+            <div class="egt col-md-3 ">15輪JP</div>
+            <div class="egttext  col-md-3">1091179.57</div>            
           </div>
           
     </header>
     <div>
-        <div class="menu">
-            <img src='button/icon_leaderboard.png'>           
-            <img id="iconclick1" onclick="iconclick1()"src="button/icon_slotgame.png" alt="敬請期待">
-            <img id="iconclick2" onclick="iconclick2()"src="button/icon_r220.png">
-            <img id="iconclick3" onclick="iconclick3()" src="button/icon_15w.png">           
+        <div class="menu  container">
+            <div class="row">
+            <img class ="col-sm-3 "src='button/icon_leaderboard.png'>           
+            <img class ="col-sm-3" id="iconclick1" onclick="iconclick1()"src="button/icon_slotgame.png" alt="敬請期待">
+            <img class ="col-sm-3" id="iconclick2" onclick="iconclick2()"src="button/icon_r220.png">
+            <img class ="col-sm-3" id="iconclick3" onclick="iconclick3()" src="button/icon_15w.png">  
+            </div>         
         </div>
     </div>
-    <div class="item" data-aos="fade-right">
-        <div class="item1">
-            <img id='img1'onclick="imgch1()"src='game/card-effect.png'>
-            <img id='img2'onclick="imgch2()" src='game/electronic.png'>
-            <img id='img3'onclick="imgch3()" src='game/fish.png'>
+    <div class="item container" data-aos="fade-right">
+        <div class="item1 row col-12">
+            <img  class="col-md-4" id='img1'onclick="imgch1()"src='game/card-effect.png'>
+            <img class="col-md-4" id='img2'onclick="imgch2()" src='game/electronic.png'>
+            <img class="col-md-4" id='img3'onclick="imgch3()" src='game/fish.png'>
         </div>
-        <div class="item2">
-            <img id='img4'onclick="imgch4()" src='game/live.png'>
-            <img id='img5'onclick="imgch5()" src='game/lottory.png'>
-            <img id='img6'onclick="imgch6()" src='game/mechine.png'>
+        <div class="item2 row">
+            <img  class="col-md-4 col-xs-1"id='img4'onclick="imgch4()" src='game/live.png'>
+            <img class="col-md-4 col-xs-1"id='img5'onclick="imgch5()" src='game/lottory.png'>
+            <img class="col-md-4 col-xs-1"id='img6'onclick="imgch6()" src='game/mechine.png'>
         </div>
-        <div class="item3">
-            <img id='img7'onclick="imgch7()" src='game/sports.png'>
-            <img id='img8'onclick="imgch8()" src='game/fish_icon.png'>
-            <img id='img9'onclick="imgch9()" src='game/esports.png'>
+        <div class="item3 row">
+            <img class="col-md-4"id='img7'onclick="imgch7()" src='game/sports.png'>
+            <img class="col-md-4"id='img8'onclick="imgch8()" src='game/fish_icon.png'>
+            <img class="col-md-4"id='img9'onclick="imgch9()" src='game/esports.png'>
         </div>
     </div>
     <script>
